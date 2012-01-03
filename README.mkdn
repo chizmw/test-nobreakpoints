@@ -148,6 +148,7 @@ regular expressions, so this is probably the direction I'm going to head in.
 # AUTHORS
 
 - James FitzGibbon <jfitz@cpan.org>
+- Apocalypse <APOCAL@cpan.org>
 - Chisel <chisel@chizography.net>
 
 # COPYRIGHT AND LICENSE
