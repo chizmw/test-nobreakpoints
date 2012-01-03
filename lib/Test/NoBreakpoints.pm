@@ -1,10 +1,4 @@
-#
-# $Id: NoBreakpoints.pm 164 2005-01-13 18:00:20Z james $
-#
-
-=head1 NAME
-
-Test::NoBreakpoints - test that files do not contain soft breakpoints
+# ABSTRACT: test that files do not contain soft breakpoints
 
 =head1 SYNOPSIS
 
@@ -45,7 +39,6 @@ use Test::Builder;
 require Exporter;
 use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
 
-$VERSION   = '0.13';
 @ISA       = 'Exporter';
 @EXPORT    = qw|
     all_files_no_breakpoints_ok
@@ -317,17 +310,6 @@ regular expressions, so this is probably the direction I'm going to head in.
 L<Test::Builder>
 
 L<Test::Pod>
-
-=head1 AUTHOR
-
-James FitzGibbon <jfitz@CPAN.org>
-
-=head1 COPYRIGHT
-
-Copyright (c) 2004-2005, James FitzGibbon.  All Rights Reserved.
-
-This module is free software. You may use it under the same terms as perl
-itself.
 
 =cut
 
