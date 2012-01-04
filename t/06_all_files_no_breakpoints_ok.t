@@ -10,7 +10,7 @@ BEGIN {
     $tests++ unless( $@ );
     # TODO: make this not horrific
     $tests += 15
-        if $ENV{AUTHOR_TESTING};
+        if $ENV{AUTHOR_TESTING} || $ENV{AUTOMATED_TESTING};
     plan tests => $tests;
     chdir 't' if -d 't';
     use lib '../lib', '../blib/lib';
@@ -76,7 +76,7 @@ my $checklist = [
 ];
 
 # we have more test files under 'dzil test' than prove
-if ($ENV{AUTHOR_TESTING}) {
+if ($ENV{AUTHOR_TESTING} || $ENV{AUTOMATED_TESTING}) {
     unshift @{$checklist}, {
         ok   => 1,
         depth => 2,

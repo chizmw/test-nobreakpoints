@@ -30,7 +30,7 @@ my @tests = qw|
 |;
 
 # if we're running dzil test we get more files than prove
-if ($ENV{AUTHOR_TESTING}) {
+if ($ENV{AUTHOR_TESTING} || $ENV{AUTOMATED_TESTING}) {
     push @tests, qw|
         ./00-load.t
         ./release-kwalitee.t
