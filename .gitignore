@@ -6,3 +6,4 @@
 *\.sw?
 /Test-NoBreakpoints-*/
 /Test-NoBreakpoints-*.gz
+/.build/
