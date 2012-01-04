@@ -16,7 +16,7 @@ use Test::NoBreakpoints 'all_perl_files';
 use Test::Exception;
 
 # test that all files in the test directory are found properly
-my @expected = sort qw|
+my @tests = qw|
    ./01_use.t
    ./02_pod.t
    ./04_all_perl_files.t
@@ -28,6 +28,20 @@ my @expected = sort qw|
    ./baz/gzonk/foo.pl
    ./baz/quux/Foo.pm
 |;
+
+# if we're running dzil test we get more files than prove
+if ($ENV{AUTHOR_TESTING}) {
+    push @tests, qw|
+        ./00-load.t
+        ./release-kwalitee.t
+        ./release-no-tabs.t
+        ./release-pod-coverage.t
+        ./release-pod-syntax.t
+    |;
+}
+
+my @expected = sort @tests;
+
 my @gotback = sort( all_perl_files('.') );
 
 is_deeply(\@gotback, \@expected, 'all perl files found');

@@ -15,7 +15,7 @@ my %expected;
 BEGIN {
 
     %expected = (
-        'Test::NoBreakpoints' => '0.13',
+        'Test::NoBreakpoints' => '0.14',
     );
 
     use Test::More;
