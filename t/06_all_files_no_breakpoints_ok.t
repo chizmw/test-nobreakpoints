@@ -5,7 +5,7 @@
 BEGIN {
     use Test::Tester 0.09;
     use Test::More;
-    our $tests = 37;
+    our $tests = 31;
     eval "use Test::NoWarnings";
     $tests++ unless( $@ );
     # TODO: make this not horrific
@@ -45,16 +45,6 @@ my $checklist = [
         depth => 2,
         name => 'no breakpoint test of ./06_all_files_no_breakpoints_ok.t',
         diag => 'breakpoint found in ./06_all_files_no_breakpoints_ok.t: $DB::signal =1' . "\n",
-    },
-    {
-        ok   => 1,
-        depth => 2,
-        name => 'no breakpoint test of ./07_deprecated_warnings.t',
-    },
-    {
-        ok   => 1,
-        depth => 2,
-        name => 'no breakpoint test of ./08_deprecated.t',
     },
     {
         ok   => 0,

@@ -22,8 +22,6 @@ my @tests = qw|
    ./04_all_perl_files.t
    ./05_no_breakpoints_ok.t
    ./06_all_files_no_breakpoints_ok.t
-   ./07_deprecated_warnings.t
-   ./08_deprecated.t
    ./baz/foo.t
    ./baz/gzonk/foo.pl
    ./baz/quux/Foo.pm

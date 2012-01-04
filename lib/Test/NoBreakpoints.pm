@@ -97,15 +97,6 @@ sub no_breakpoints_ok($;$)
     
 }
 
-# deprecated name for the above
-sub no_brkpts_ok
-{
-
-    warnings::warnif('deprecated', "no_brkpts_ok is deprecated (use no_breakpoints_ok instead)");
-    goto &no_breakpoints_ok;
-
-}
-
 # find all perl files in a given directory
 # graciously borrwed from Test::Pod::all_pod_files by
 # Andy Lester / brian d foy
@@ -172,15 +163,6 @@ sub all_files_no_breakpoints_ok
     }
     return $ok;
     
-}
-
-# deprecated name for the above
-sub all_files_no_brkpts_ok
-{
-
-    warnings::warnif('deprecated', "all_files_no_brkpts_ok is deprecated (use all_files_no_breakpoints_ok instead)");
-    goto &all_files_no_breakpoints_ok;
-
 }
 
 # keep require happy
