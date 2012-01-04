@@ -1,7 +1,3 @@
-#
-# $Id: 05_no_breakpoints_ok.t 163 2004-12-31 05:07:16Z james $
-#
-
 BEGIN {
     use Test::Tester 0.09;
     use Test::More;

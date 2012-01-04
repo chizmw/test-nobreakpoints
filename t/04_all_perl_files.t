@@ -1,7 +1,3 @@
-#
-# $Id: 04_all_perl_files.t 163 2004-12-31 05:07:16Z james $
-#
-
 BEGIN {
     use Test::More;
     our $tests = 1;
