@@ -294,7 +294,3 @@ L<Test::Builder>
 L<Test::Pod>
 
 =cut
-
-#
-# EOF
-

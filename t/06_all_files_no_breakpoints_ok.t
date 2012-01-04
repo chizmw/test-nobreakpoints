@@ -99,6 +99,3 @@ check_tests(
     $checklist,
     'all_files_no_breakpoints_ok finds correct breakpoints',
 );
-
-#
-# EOF

@@ -39,6 +39,3 @@ for my $package( keys %expected ) {
     is($version_var, $expected{$package},
         "$package is at version $expected{$package}");
 }
-
-#
-# EOF

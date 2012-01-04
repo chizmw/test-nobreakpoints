@@ -39,6 +39,3 @@ my @expected = sort @tests;
 my @gotback = sort( all_perl_files('.') );
 
 is_deeply(\@gotback, \@expected, 'all perl files found');
-
-#
-# EOF
