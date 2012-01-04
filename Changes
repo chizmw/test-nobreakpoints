@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 	- apply patch from https://rt.cpan.org/Ticket/Display.html?id=53609
+    - Remove deprecated methods
+    - Convert to Dist::Zilla
+    - Make tests pass under 'dzil smoke'
+    - Make tests pass under 'dzil test' and 'prove'
 
 2005-01-13  v0.13
     - change 'brkpts' to 'breakpoints' on the advice of Andy Lester The old
