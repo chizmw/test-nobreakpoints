@@ -30,4 +30,6 @@ notifications:
     secure: cGyeQuIuoqeeuSe3yslXhHu07xR8ZZdiC/Ahc42Tj1Gg2vwDTXLEH2LahzVYu7/nTpCL13Q8qAdE6VZ7+3HIg5zKb75HF0bOS0I+Ycyiy9YeVwl6b6bk0PD3/IdLd3gW/MhGn0m9ysYIq/MnpbSTLs5ZwFK9B6m6s2YCOgMAYbuOuDxhmf/Qm1KZiugZ6SF7gjMwVmXt2Gq7qo+DWjHukWjjthWNqQID/waXkpvtV0845uGipHr0kinfaMWXrvjKsrwt7NKZRVqEqmRVQheVUSV+67yDTOcnrwyJsTRtvdNbCi2Mpk19Sz8w7WvVInfAD3n0oYPMXv2Q/08Gw8Qmm4htkrWjMEHXcxgeO1Br0ux47BZOVUGhjkUMfLHFdZqa3u8jz4xjvZjmVHeL6/Rq/2QWrYVfV26mEYGAONs4S03KT4div9ujjc2eBSxJwxpwgaO+3PPXWGf6ZoOsIe4InYiWzrqGarodMgvchb/H00PJxbkp4TgGP8TRPN7Oj1mpzwF6g6dj8FqeG1I+MqdfVLXzT0J1M51NJPfOmAa7BBADOamIP9n/loWTk0ajNuI1sBEL7Ly2o9JRL7lmyI6PSpVwQ7kNcjmzl8GYPkIyakEkzB38aL6Uvik4s3DTk32m2WcIk3VohWCNlf3UwrMC3oRoEFLgUgqDXnKgD3FUXOs=
 matrix:
   allow_failures:
-    - perl: blead       # ignore failures for blead perl
+    - '5.22'
+    - '5.20.3'
+    - '5.18.2'
